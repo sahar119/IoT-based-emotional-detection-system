@@ -1,0 +1,39 @@
+#include <Servo.h>
+Servo myservo;
+
+int pos = 0;    // variable to store the servo position
+char result = '0';
+
+void setup() {
+  Serial.begin(9600);
+  myservo.attach(5);  // attaches the servo on pin 5 to the servo object
+}
+
+void loop() {
+  // read a single character (label or class name) from serial port
+  if (Serial.available()) {
+    result = Serial.read();
+  }
+  // do something depending on the label
+  switch (result) {
+    case '0':  
+      myservo.write(140);
+      delay(15);
+      break;
+    case '1':  // label "1"
+      myservo.write(120);              // tell servo to go to position
+      delay(15);                      // waits 15 ms for the servo to reach the position
+      break;
+    case '2':  // label "2"
+      myservo.write(100);
+      delay(15);
+      break;
+
+    default:  // other labels
+
+      break;
+  }
+
+  //myservo.write(pos);              // tell servo to go to position in variable 'pos'
+  //delay(15);                       // waits 15 ms for the servo to reach the position
+}
