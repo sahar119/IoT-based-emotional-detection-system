@@ -21,4 +21,4 @@ An Arduino was programmed to move a servo motor that was connected to a clock pa
 
 ### <h3 align="left">Project Demo</h3>
 ---
-![Demo GIF]()
+![Demo GIF](https://github.com/sahar119/computer-vision-based-emotional-detection-system/blob/main/gif2.gif)
