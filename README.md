@@ -1,5 +1,6 @@
 
-# <h1 align="center">computer-vision-based-emotional-detection-system</h1>
+# <h1 align="center">IoT-based-emotional-detection-system
+</h1>
 
 ## <h3 align="center">The aim is to provide a computer vision solution to detect emotions in real-time and leverage IoT integration to trigger personalized responses.</h3>
 ---
